@@ -1,5 +1,5 @@
 # AI-Integrated Cybersecurity Workforce-Readiness Framework (AICWRF)
-**Version 0.1, 2026-11-26. Author: Ezekiel Ologunde. Self-published. Not peer reviewed. Not adopted by any institution. Not sponsored or endorsed by DoD, NIST, NICE, any military branch, or any agency.**
+**Version 0.2, 2026-11-27. Author: Ezekiel Ologunde. Self-published. Not peer reviewed. Not adopted by any institution. Not sponsored or endorsed by DoD, NIST, NICE, any military branch, or any agency.**
 
 ## 1. Purpose and scope
 A documented, reusable way for community college and career-technical educators to teach core cybersecurity skills together with AI-security skills, with every module aligned to NICE Framework work roles and to industry certifications. It has two tracks that share one common core:
@@ -73,4 +73,5 @@ What to copy (lesson packet once released, rubric); what to change (case data fo
 Self-published; not peer reviewed. A DOI, if later assigned, records a deposit and version, not peer review or adoption. No student data is included. Feedback is welcome; any use by others is recorded only with their written confirmation.
 
 ## 11. Change log
+- 0.2, 2026-11-27: crosswalk Fit column completed from the author's descriptions of the taught courses; redesign courses and new modules marked Planned. Entries not independently verified.
 - 0.1, 2026-11-26: first release.

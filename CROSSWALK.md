@@ -1,4 +1,4 @@
-# NICE Framework crosswalk (AICWRF v0.1 draft)
+# NICE Framework crosswalk (AICWRF v0.2)
 
 Alignment of course modules to NICE Framework Components v2.2.0 (NIST SP 800-181 Rev. 1) work roles, task statements and the AI Security competency area. Task and statement text is quoted from the official NICE data file (https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json); every task ID was checked against its work role.
 
@@ -6,7 +6,7 @@ Alignment of course modules to NICE Framework Components v2.2.0 (NIST SP 800-181
 - This is the author's alignment, not an official NICE, NIST or DoD mapping, and no endorsement is implied.
 - Numbers such as 541 are OPM codes that NICE lists beside each role. DCWF codes below are name matches from a March 2026 DoD slide deck, not a confirmed mapping.
 - AI-integration items attach to NICE competency area NF-COM-002 (AI Security), not to the work roles. "Aligned to the competency area" is the only claim.
-- The "Fit" column is the author's judgment of whether a lab or assignment exercises each task; it is still to be completed. No job-readiness, DoD 8140 qualification or accreditation is claimed.
+- The "Fit" column is the author's judgment of whether a lab or assignment exercises each task; entries are the author's statements about their own courses (v0.2) and have not been independently verified; Strong = students do the task and it is graded, Partial = a simulated or smaller version, Planned = not yet taught. No job-readiness, DoD 8140 qualification or accreditation is claimed.
 - CIS 214, 280 and 282 are planned redesigns, not yet taught in this form.
 
 # DCWF lookup (2026-11-26)
@@ -42,18 +42,18 @@ Live Lab password cracking, scanning, penetration-test reporting. AI module: ver
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1091 | Perform authorized penetration testing on enterprise network assets | to be assessed by author |
-| T1118 | Identify vulnerabilities | to be assessed by author |
-| T1119 | Recommend vulnerability remediation strategies | to be assessed by author |
-| T1619 | Perform risk and vulnerability assessments | to be assessed by author |
-| T1279 | Prepare audit reports | to be assessed by author |
-| T1084 | Identify anomalous network activity | to be assessed by author |
+| T1091 | Perform authorized penetration testing on enterprise network assets | Partial: attacks run on provided lab systems, not enterprise assets |
+| T1118 | Identify vulnerabilities | Strong: students run Nessus scans, review the report, triage findings and document evidence |
+| T1119 | Recommend vulnerability remediation strategies | Strong: remediation recommendations are written and graded in findings |
+| T1619 | Perform risk and vulnerability assessments | Strong (lab scope): scan-based assessment with risk ratings, rubric-graded |
+| T1279 | Prepare audit reports | Partial: rubric-graded vulnerability and finding reports, not formal audit reports |
+| T1084 | Identify anomalous network activity | Partial: detection, log review and IDS alert triage are covered as a unit |
 
 **Secondary work role:** DD-WRL-005 Software Security Assessment (OPM 622)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1359 | Perform penetration testing | to be assessed by author |
+| T1359 | Perform penetration testing | Partial: lab-based, tool-driven penetration testing |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -73,19 +73,19 @@ Debugging (linked-list segfault lab), secure coding component. AI module: verify
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0077 | Develop secure code and error handling | to be assessed by author |
-| T1197 | Identify common coding flaws | to be assessed by author |
-| T1262 | Identify programming code flaws | to be assessed by author |
-| T1261 | Mitigate programming vulnerabilities | to be assessed by author |
-| T1073 | Perform code reviews | to be assessed by author |
-| T1116 | Correct program errors | to be assessed by author |
-| T1074 | Prepare secure code documentation | to be assessed by author |
+| T0077 | Develop secure code and error handling | Partial: input validation and safe handling are taught (author-stated); graded practice not confirmed |
+| T1197 | Identify common coding flaws | Partial: memory-safety flaws are treated as security issues (author-stated); graded practice not confirmed |
+| T1262 | Identify programming code flaws | Strong: students find code flaws in their own programs (exemplar) |
+| T1261 | Mitigate programming vulnerabilities | Partial: mitigation is taught alongside those flaws (author-stated); graded practice not confirmed |
+| T1073 | Perform code reviews | Strong: code review, including review of AI-written code against tests, is done often (author-stated) |
+| T1116 | Correct program errors | Strong: students diagnose and fix program errors (exemplar: linked-list segfault) |
+| T1074 | Prepare secure code documentation | Not covered as secure-code documentation: assignments use script tools, and AI is used to help students understand code (author-stated) |
 
 **Secondary work role:** DD-WRL-005 Software Security Assessment (OPM 622)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1590 | Identify programming flaws | to be assessed by author |
+| T1590 | Identify programming flaws | Strong: students identify programming flaws (exemplar) |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -105,13 +105,13 @@ DHCP and CLI troubleshooting, support runbooks. AI module: AI-drafted runbook, v
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0237 | Troubleshoot system hardware and software | to be assessed by author |
-| T1538 | Resolve customer-reported system incidents and events | to be assessed by author |
-| T1567 | Configure system hardware, software, and peripheral equipment | to be assessed by author |
-| T1569 | Administer system and network user accounts | to be assessed by author |
-| T1427 | Maintain incident tracking and solution databases | to be assessed by author |
-| T1334 | Produce cybersecurity instructional materials | to be assessed by author |
-| T1566 | Install system hardware, software, and peripheral equipment | to be assessed by author |
+| T0237 | Troubleshoot system hardware and software | Strong: DHCP and CLI troubleshooting labs |
+| T1538 | Resolve customer-reported system incidents and events | Strong: students work help-desk IT support tickets (author-stated) |
+| T1567 | Configure system hardware, software, and peripheral equipment | Strong: students configure networking devices and settings, including with PowerShell scripting (author-stated) |
+| T1569 | Administer system and network user accounts | Strong: students administer accounts on an Active Directory server (author-stated) |
+| T1427 | Maintain incident tracking and solution databases | Partial: help-desk ticket work is done; a maintained tracking or solution database is not confirmed |
+| T1334 | Produce cybersecurity instructional materials | Partial: students write support runbooks, which are instructional documents |
+| T1566 | Install system hardware, software, and peripheral equipment | Strong: installation labs (for example the week 2 Windows install lab) |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -130,22 +130,22 @@ Shared SOC monitoring of the CIS 280 network; CySA+ target (CS0-004). The planne
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1084 | Identify anomalous network activity | to be assessed by author |
-| T1112 | Validate network alerts | to be assessed by author |
-| T1299 | Determine causes of network alerts | to be assessed by author |
-| T1348 | Distinguish between benign and potentially malicious cybersecurity attacks and intrusions | to be assessed by author |
-| T1350 | Perform continuous monitoring of system activity | to be assessed by author |
-| T1387 | Validate intrusion detection system alerts | to be assessed by author |
-| T1241 | Document cybersecurity incidents | to be assessed by author |
-| T1242 | Escalate incidents that may cause ongoing and immediate impact to the environment | to be assessed by author |
-| T1290 | Communicate daily network event and activity reports | to be assessed by author |
+| T1084 | Identify anomalous network activity | Planned (Spring 2027), not yet taught |
+| T1112 | Validate network alerts | Planned (Spring 2027), not yet taught |
+| T1299 | Determine causes of network alerts | Planned (Spring 2027), not yet taught |
+| T1348 | Distinguish between benign and potentially malicious cybersecurity attacks and intrusions | Planned (Spring 2027), not yet taught |
+| T1350 | Perform continuous monitoring of system activity | Planned (Spring 2027), not yet taught |
+| T1387 | Validate intrusion detection system alerts | Planned (Spring 2027), not yet taught |
+| T1241 | Document cybersecurity incidents | Planned (Spring 2027), not yet taught |
+| T1242 | Escalate incidents that may cause ongoing and immediate impact to the environment | Planned (Spring 2027), not yet taught |
+| T1290 | Communicate daily network event and activity reports | Planned (Spring 2027), not yet taught |
 
 **Secondary work role:** PD-WRL-003 Incident Response (OPM 531)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1250 | Perform cyber defense incident triage | to be assessed by author |
-| T1332 | Produce incident findings reports | to be assessed by author |
+| T1250 | Perform cyber defense incident triage | Planned (Spring 2027), not yet taught |
+| T1332 | Produce incident findings reports | Planned (Spring 2027), not yet taught |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -164,21 +164,21 @@ Progressive hardening of a shared class network; Security+ target. Planned redes
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1212 | Implement cybersecurity countermeasures for systems and applications | to be assessed by author |
-| T1563 | Implement system security measures | to be assessed by author |
-| T1559 | Resolve vulnerabilities in systems and system components | to be assessed by author |
-| T1548 | Determine adequacy of access controls | to be assessed by author |
-| T1263 | Perform security reviews | to be assessed by author |
+| T1212 | Implement cybersecurity countermeasures for systems and applications | Planned (Spring 2027), not yet taught |
+| T1563 | Implement system security measures | Planned (Spring 2027), not yet taught |
+| T1559 | Resolve vulnerabilities in systems and system components | Planned (Spring 2027), not yet taught |
+| T1548 | Determine adequacy of access controls | Planned (Spring 2027), not yet taught |
+| T1263 | Perform security reviews | Planned (Spring 2027), not yet taught |
 
 **Secondary work role:** IO-WRL-004 Network Operations (OPM 441)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0081 | Diagnose network connectivity problems | to be assessed by author |
-| T1050 | Improve network security practices | to be assessed by author |
-| T1100 | Configure network hubs, routers, and switches | to be assessed by author |
-| T1248 | Patch network vulnerabilities | to be assessed by author |
-| T1313 | Test network infrastructure, including software and hardware devices | to be assessed by author |
+| T0081 | Diagnose network connectivity problems | Planned (Spring 2027), not yet taught |
+| T1050 | Improve network security practices | Planned (Spring 2027), not yet taught |
+| T1100 | Configure network hubs, routers, and switches | Planned (Spring 2027), not yet taught |
+| T1248 | Patch network vulnerabilities | Planned (Spring 2027), not yet taught |
+| T1313 | Test network infrastructure, including software and hardware devices | Planned (Spring 2027), not yet taught |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -196,24 +196,24 @@ Evidence imaging and Autopsy/AXIOM analysis; certification MCFE (recommended) or
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1120 | Create forensically sound duplicates of evidence | to be assessed by author |
-| T1199 | Identify digital evidence for analysis | to be assessed by author |
-| T1324 | Process digital evidence | to be assessed by author |
-| T1325 | Document digital evidence | to be assessed by author |
-| T1486 | Process forensic images | to be assessed by author |
-| T0173 | Perform timeline analysis | to be assessed by author |
-| T1510 | Preserve digital evidence | to be assessed by author |
-| T1607 | Recover information from forensic data sources | to be assessed by author |
-| T1383 | Utilize deployable forensics toolkit | to be assessed by author |
-| T1159 | Create technical summary of findings reports | to be assessed by author |
-| T1175 | Determine if digital media chain or custody processes meet Federal Rules of Evidence requirements | to be assessed by author |
+| T1120 | Create forensically sound duplicates of evidence | Planned (Spring 2027), not yet taught |
+| T1199 | Identify digital evidence for analysis | Planned (Spring 2027), not yet taught |
+| T1324 | Process digital evidence | Planned (Spring 2027), not yet taught |
+| T1325 | Document digital evidence | Planned (Spring 2027), not yet taught |
+| T1486 | Process forensic images | Planned (Spring 2027), not yet taught |
+| T0173 | Perform timeline analysis | Planned (Spring 2027), not yet taught |
+| T1510 | Preserve digital evidence | Planned (Spring 2027), not yet taught |
+| T1607 | Recover information from forensic data sources | Planned (Spring 2027), not yet taught |
+| T1383 | Utilize deployable forensics toolkit | Planned (Spring 2027), not yet taught |
+| T1159 | Create technical summary of findings reports | Planned (Spring 2027), not yet taught |
+| T1175 | Determine if digital media chain or custody processes meet Federal Rules of Evidence requirements | Planned (Spring 2027), not yet taught |
 
 **Secondary work role:** IN-WRL-002 Digital Evidence Analysis (OPM 211)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1542 | Document original condition of digital evidence | to be assessed by author |
-| T1256 | Perform forensically sound image collection | to be assessed by author |
+| T1542 | Document original condition of digital evidence | Planned (Spring 2027), not yet taught |
+| T1256 | Perform forensically sound image collection | Planned (Spring 2027), not yet taught |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -231,23 +231,23 @@ A+ target. Hardware and OS support labs.
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0237 | Troubleshoot system hardware and software | to be assessed by author |
-| T1566 | Install system hardware, software, and peripheral equipment | to be assessed by author |
-| T1567 | Configure system hardware, software, and peripheral equipment | to be assessed by author |
-| T1538 | Resolve customer-reported system incidents and events | to be assessed by author |
-| T1572 | Inventory technology resources | to be assessed by author |
-| T1580 | Monitor client-level computer system performance | to be assessed by author |
+| T0237 | Troubleshoot system hardware and software | Strong: hands-on hardware and software troubleshooting (author-stated) |
+| T1566 | Install system hardware, software, and peripheral equipment | Strong: students install hardware, software and peripherals (author-stated) |
+| T1567 | Configure system hardware, software, and peripheral equipment | Strong: students configure systems and peripherals (author-stated) |
+| T1538 | Resolve customer-reported system incidents and events | Strong: help-desk-style incident work (author-stated) |
+| T1572 | Inventory technology resources | Strong: students inventory hardware and software (author-stated) |
+| T1580 | Monitor client-level computer system performance | Strong: students monitor performance with system tools (author-stated) |
 
 **Secondary work role:** IO-WRL-005 Systems Administration (OPM 451)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0531 | Troubleshoot hardware/software interface and interoperability problems | to be assessed by author |
-| T0431 | Check system hardware availability, functionality, integrity, and efficiency | to be assessed by author |
-| T1500 | Install systems and servers | to be assessed by author |
-| T1502 | Troubleshoot systems and servers | to be assessed by author |
-| T1588 | Diagnose faulty system and server hardware | to be assessed by author |
-| T1589 | Repair faulty system and server hardware | to be assessed by author |
+| T0531 | Troubleshoot hardware/software interface and interoperability problems | Strong: hardware and software interface problems are troubleshot in the labs (author-stated) |
+| T0431 | Check system hardware availability, functionality, integrity, and efficiency | Partial: availability and efficiency checks come through performance monitoring; formal integrity checks not confirmed |
+| T1500 | Install systems and servers | Partial: operating-system installs are done; server-specific installs not confirmed |
+| T1502 | Troubleshoot systems and servers | Partial: troubleshooting is done; server-specific exposure not confirmed |
+| T1588 | Diagnose faulty system and server hardware | Partial: students diagnose faulty hardware; server hardware not confirmed |
+| T1589 | Repair faulty system and server hardware | Partial: students replace or repair faulty hardware; server hardware not confirmed |
 
 **AI-integration items:**
 
@@ -292,25 +292,25 @@ These describe the author's own work as framework author, mapped to the Cybersec
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1463 | Develop cybersecurity curriculum goals and objectives | to be assessed by author |
-| T1475 | Develop instructional strategies | to be assessed by author |
-| T1451 | Create interactive learning exercises | to be assessed by author |
-| T1608 | Perform periodic reviews of learning materials and courses for accuracy and currency | to be assessed by author |
-| T1438 | Determine effectiveness of instruction and training | to be assessed by author |
-| T1446 | Conduct learning needs assessments | to be assessed by author |
+| T1463 | Develop cybersecurity curriculum goals and objectives | Strong: framework goals and module objectives written (author-stated) |
+| T1475 | Develop instructional strategies | Strong: verify-and-correct method applied across courses (author-stated) |
+| T1451 | Create interactive learning exercises | Partial: live labs and the AI exchange exercise; toolkit lesson not yet run outside |
+| T1608 | Perform periodic reviews of learning materials and courses for accuracy and currency | Partial: Spring 2027 redesign planning documents review course content |
+| T1438 | Determine effectiveness of instruction and training | Partial: student AI-module submissions exist; no aggregate effectiveness analysis yet |
+| T1446 | Conduct learning needs assessments | Strong: learning needs assessment done by the author (author; basis to be described) |
 
 **Secondary work role:** OG-WRL-005 Cybersecurity Instruction (OPM 712)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1413 | Develop training modules and classes | to be assessed by author |
-| T1414 | Develop training assignments | to be assessed by author |
-| T1415 | Develop training evaluations | to be assessed by author |
-| T1416 | Develop grading and proficiency standards | to be assessed by author |
-| T1418 | Develop learning objectives and goals | to be assessed by author |
-| T1421 | Develop proficiency assessments | to be assessed by author |
-| T1537 | Determine if cybersecurity training, education, and awareness meet established goals | to be assessed by author |
-| T1609 | Recommend revisions to learning materials and curriculum | to be assessed by author |
+| T1413 | Develop training modules and classes | Strong: AI modules deployed in CIS 246, 251 and 268 (author-stated) |
+| T1414 | Develop training assignments | Strong: AI-module assignments written and given; students have submitted work (author-stated) |
+| T1415 | Develop training evaluations | Partial: rubric-based evaluation of student AI-module work; no separate evaluation instrument stated |
+| T1416 | Develop grading and proficiency standards | Strong: grading standards in the AI-module rubric (author-stated) |
+| T1418 | Develop learning objectives and goals | Strong: learning objectives written for the AI modules (author-stated) |
+| T1421 | Develop proficiency assessments | Strong: AI-module rubric and the toolkit rubrics (author-stated) |
+| T1537 | Determine if cybersecurity training, education, and awareness meet established goals | Partial: student submissions exist; no aggregate check against goals yet |
+| T1609 | Recommend revisions to learning materials and curriculum | Partial: revisions recommended in the Spring 2027 planning documents |
 
 ## M10 AI security (new content, Track B; to be written)
 
@@ -318,18 +318,18 @@ Seeded from the CIS 214 and 280 redesigns and the AI module. **No work role clai
 
 | ID | Type | Statement | Work roles carrying it | Fit |
 |---|---|---|---|---|
-| K1320 | knowledge | Knowledge of common AI security risks | none | to be assessed by author |
-| K1324 | knowledge | Knowledge of data poisoning cyberattacks | none | to be assessed by author |
-| K1333 | knowledge | Knowledge of misinformation and disinformation vulnerabilities in AI systems | none | to be assessed by author |
-| K1334 | knowledge | Knowledge of NIST AI Risk Management Framework | none | to be assessed by author |
-| K1341 | knowledge | Knowledge of test, evaluation, verification, and validation (TEVV) processes | none | to be assessed by author |
-| K1342 | knowledge | Knowledge of training, validation, and test data sets | none | to be assessed by author |
-| K1345 | knowledge | Knowledge of agentic AI principles and practices | none | to be assessed by author |
-| S0955 | skill | Skill in evaluating machine learning models | none | to be assessed by author |
-| S0956 | skill | Skill in evaluating the performance of algorithms | none | to be assessed by author |
-| S0957 | skill | Skill in identifying possible mistakes or hallucinations in AI-generated outputs | none | to be assessed by author |
-| S0953 | skill | Skill in developing prompts for generative AI systems | none | to be assessed by author |
-| K0904 | knowledge | Knowledge of machine learning principles and practices | IO-WRL-001 | to be assessed by author |
+| K1320 | knowledge | Knowledge of common AI security risks | none | Planned: module to be written |
+| K1324 | knowledge | Knowledge of data poisoning cyberattacks | none | Planned: module to be written |
+| K1333 | knowledge | Knowledge of misinformation and disinformation vulnerabilities in AI systems | none | Planned: module to be written |
+| K1334 | knowledge | Knowledge of NIST AI Risk Management Framework | none | Planned: module to be written |
+| K1341 | knowledge | Knowledge of test, evaluation, verification, and validation (TEVV) processes | none | Planned: module to be written |
+| K1342 | knowledge | Knowledge of training, validation, and test data sets | none | Planned: module to be written |
+| K1345 | knowledge | Knowledge of agentic AI principles and practices | none | Planned: module to be written |
+| S0955 | skill | Skill in evaluating machine learning models | none | Planned: module to be written |
+| S0956 | skill | Skill in evaluating the performance of algorithms | none | Planned: module to be written |
+| S0957 | skill | Skill in identifying possible mistakes or hallucinations in AI-generated outputs | none | Strong: students verify and correct AI output in the deployed AI modules (CIS 246, 251, 268); submissions exist, not yet aggregated (author-stated) |
+| S0953 | skill | Skill in developing prompts for generative AI systems | none | Partial: students write prompts and document the AI exchange; no separate prompt-design unit stated |
+| K0904 | knowledge | Knowledge of machine learning principles and practices | IO-WRL-001 | Planned: module to be written |
 
 ## M11 OT/IoT (new content, to be written)
 
@@ -337,14 +337,14 @@ Seeded from the CIS 214 and 280 redesigns and the AI module. **No work role clai
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T2047 | Inventory OT assets | to be assessed by author |
-| T2028 | Develop OT inventory model for cybersecurity  | to be assessed by author |
-| T2031 | Identify gaps in OT network architecture | to be assessed by author |
-| T2045 | Assign networked engineering assets to security zones | to be assessed by author |
-| T2032 | Assign security level targets to network zones for control systems | to be assessed by author |
-| T2034 | Design cybersecurity tools for OT systems | to be assessed by author |
-| T2037 | Create cybersecurity inspection and test policies and procedures for OT systems | to be assessed by author |
-| T2042 | Generate cyberattack scenarios of serious physical consequence | to be assessed by author |
-| T1619 | Perform risk and vulnerability assessments | to be assessed by author |
-| T2051 | Train cybersecurity defense technicians on OT system processes and procedures | to be assessed by author |
+| T2047 | Inventory OT assets | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2028 | Develop OT inventory model for cybersecurity  | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2031 | Identify gaps in OT network architecture | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2045 | Assign networked engineering assets to security zones | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2032 | Assign security level targets to network zones for control systems | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2034 | Design cybersecurity tools for OT systems | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2037 | Create cybersecurity inspection and test policies and procedures for OT systems | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2042 | Generate cyberattack scenarios of serious physical consequence | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T1619 | Perform risk and vulnerability assessments | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
+| T2051 | Train cybersecurity defense technicians on OT system processes and procedures | Planned: module to be written (seed: unsubmitted simulation-testbed drafts) |
 
