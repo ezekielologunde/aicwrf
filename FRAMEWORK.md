@@ -64,7 +64,7 @@ What to copy (lesson packet once released, rubric); what to change (case data fo
 | Item | Status |
 |---|---|
 | Verification lesson | in preparation; not included in this release; no outside run yet |
-| AI modules in CIS 246, 251, 268 | deployed per author; aggregate, de-identified evidence to be assembled |
+| AI modules in CIS 246, 251, 268 | AI-module assignment with a 3-criterion rubric exists in each course; as of 2026-11-27 submissions: CIS 251 12 of 12 (graded), CIS 246 1 of 15, CIS 268 1 of 13; no aggregate analysis yet |
 | Outside review or adoption | none yet |
 | Peer review | none |
 | Publication | none |

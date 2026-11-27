@@ -42,18 +42,18 @@ Live Lab password cracking, scanning, penetration-test reporting. AI module: ver
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1091 | Perform authorized penetration testing on enterprise network assets | Partial: attacks run on provided lab systems, not enterprise assets |
-| T1118 | Identify vulnerabilities | Strong: students run Nessus scans, review the report, triage findings and document evidence |
-| T1119 | Recommend vulnerability remediation strategies | Strong: remediation recommendations are written and graded in findings |
-| T1619 | Perform risk and vulnerability assessments | Strong (lab scope): scan-based assessment with risk ratings, rubric-graded |
-| T1279 | Prepare audit reports | Partial: rubric-graded vulnerability and finding reports, not formal audit reports |
-| T1084 | Identify anomalous network activity | Partial: detection, log review and IDS alert triage are covered as a unit |
+| T1091 | Perform authorized penetration testing on enterprise network assets | Partial: attacks run in lab environments, not on enterprise assets |
+| T1118 | Identify vulnerabilities | Strong: graded Live Labs include network reconnaissance, Nmap NSE, SQLMap, Netcat vulnerability discovery and evaluating end-of-life software |
+| T1119 | Recommend vulnerability remediation strategies | Partial: remediation is part of the AI-assisted pentest write-up and the EOL software lab |
+| T1619 | Perform risk and vulnerability assessments | Partial: risk and vulnerability evaluation inside graded labs; no stand-alone assessment assignment |
+| T1279 | Prepare audit reports | Partial: AI-assisted pentest reporting assignment (rubric-graded); not a formal audit report |
+| T1084 | Identify anomalous network activity | Partial: network traffic sniffing lab; detection and log review are described by the author but are not a separate graded item |
 
 **Secondary work role:** DD-WRL-005 Software Security Assessment (OPM 622)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1359 | Perform penetration testing | Partial: lab-based, tool-driven penetration testing |
+| T1359 | Perform penetration testing | Strong: graded Live Labs cover exploitation, privilege escalation, lateral movement, post-exploitation (lab environment) |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -73,11 +73,11 @@ Debugging (linked-list segfault lab), secure coding component. AI module: verify
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0077 | Develop secure code and error handling | Partial: input validation and safe handling are taught (author-stated); graded practice not confirmed |
-| T1197 | Identify common coding flaws | Partial: memory-safety flaws are treated as security issues (author-stated); graded practice not confirmed |
+| T0077 | Develop secure code and error handling | Partial: described by the author as taught; not visible as a separate graded item |
+| T1197 | Identify common coding flaws | Partial: described by the author as taught; not visible as a separate graded item |
 | T1262 | Identify programming code flaws | Strong: students find code flaws in their own programs (exemplar) |
-| T1261 | Mitigate programming vulnerabilities | Partial: mitigation is taught alongside those flaws (author-stated); graded practice not confirmed |
-| T1073 | Perform code reviews | Strong: code review, including review of AI-written code against tests, is done often (author-stated) |
+| T1261 | Mitigate programming vulnerabilities | Partial: described by the author as taught; not visible as a separate graded item |
+| T1073 | Perform code reviews | Partial: students verify AI-written code by compiling and running it (rubric item); no separate code-review assignment |
 | T1116 | Correct program errors | Strong: students diagnose and fix program errors (exemplar: linked-list segfault) |
 | T1074 | Prepare secure code documentation | Not covered as secure-code documentation: assignments use script tools, and AI is used to help students understand code (author-stated) |
 
@@ -105,13 +105,13 @@ DHCP and CLI troubleshooting, support runbooks. AI module: AI-drafted runbook, v
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T0237 | Troubleshoot system hardware and software | Strong: DHCP and CLI troubleshooting labs |
-| T1538 | Resolve customer-reported system incidents and events | Strong: students work help-desk IT support tickets (author-stated) |
-| T1567 | Configure system hardware, software, and peripheral equipment | Strong: students configure networking devices and settings, including with PowerShell scripting (author-stated) |
-| T1569 | Administer system and network user accounts | Strong: students administer accounts on an Active Directory server (author-stated) |
-| T1427 | Maintain incident tracking and solution databases | Partial: help-desk ticket work is done; a maintained tracking or solution database is not confirmed |
+| T0237 | Troubleshoot system hardware and software | Strong: CLI Troubleshooting Lab (rubric-graded) |
+| T1538 | Resolve customer-reported system incidents and events | Strong: simulated tickets from the CLI Troubleshooting Lab, written up as a helpdesk portfolio (capstone Track A, rubric-graded) |
+| T1567 | Configure system hardware, software, and peripheral equipment | Partial: CLI troubleshooting lab; capstone track writes a PowerShell or Bash script for a support task |
+| T1569 | Administer system and network user accounts | Partial: described by the author (Active Directory server work); not visible as a separate graded item |
+| T1427 | Maintain incident tracking and solution databases | Partial: ticket write-ups in the helpdesk portfolio; no maintained tracking database |
 | T1334 | Produce cybersecurity instructional materials | Partial: students write support runbooks, which are instructional documents |
-| T1566 | Install system hardware, software, and peripheral equipment | Strong: installation labs (for example the week 2 Windows install lab) |
+| T1566 | Install system hardware, software, and peripheral equipment | Strong: Week 2 lab installing Windows from a bootable USB |
 
 **AI-integration items (official NICE v2.2.0 text):**
 
@@ -296,20 +296,20 @@ These describe the author's own work as framework author, mapped to the Cybersec
 | T1475 | Develop instructional strategies | Strong: verify-and-correct method applied across courses (author-stated) |
 | T1451 | Create interactive learning exercises | Partial: live labs and the AI exchange exercise; toolkit lesson not yet run outside |
 | T1608 | Perform periodic reviews of learning materials and courses for accuracy and currency | Partial: Spring 2027 redesign planning documents review course content |
-| T1438 | Determine effectiveness of instruction and training | Partial: student AI-module submissions exist; no aggregate effectiveness analysis yet |
+| T1438 | Determine effectiveness of instruction and training | Partial: submissions exist in CIS 251 (12 of 12); only one each in CIS 246 and 268 so far; no aggregate effectiveness analysis yet |
 | T1446 | Conduct learning needs assessments | Strong: learning needs assessment done by the author (author; basis to be described) |
 
 **Secondary work role:** OG-WRL-005 Cybersecurity Instruction (OPM 712)
 
 | Task ID | Official task statement | Fit |
 |---|---|---|
-| T1413 | Develop training modules and classes | Strong: AI modules deployed in CIS 246, 251 and 268 (author-stated) |
-| T1414 | Develop training assignments | Strong: AI-module assignments written and given; students have submitted work (author-stated) |
+| T1413 | Develop training modules and classes | Strong: AI-module assignments exist in CIS 246, 251 and 268 (rubric-graded) |
+| T1414 | Develop training assignments | Strong: AI-module assignment with a 3-criterion rubric exists in CIS 246, 251 and 268; as of 2026-11-27 submissions: CIS 251 12 of 12 (graded), CIS 246 1 of 15, CIS 268 1 of 13 |
 | T1415 | Develop training evaluations | Partial: rubric-based evaluation of student AI-module work; no separate evaluation instrument stated |
 | T1416 | Develop grading and proficiency standards | Strong: grading standards in the AI-module rubric (author-stated) |
 | T1418 | Develop learning objectives and goals | Strong: learning objectives written for the AI modules (author-stated) |
 | T1421 | Develop proficiency assessments | Strong: AI-module rubric and the toolkit rubrics (author-stated) |
-| T1537 | Determine if cybersecurity training, education, and awareness meet established goals | Partial: student submissions exist; no aggregate check against goals yet |
+| T1537 | Determine if cybersecurity training, education, and awareness meet established goals | Partial: submissions exist mainly in CIS 251; no aggregate check against goals yet |
 | T1609 | Recommend revisions to learning materials and curriculum | Partial: revisions recommended in the Spring 2027 planning documents |
 
 ## M10 AI security (new content, Track B; to be written)
